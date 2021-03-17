@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<title>Smarty - Multipurpose + Admin</title>
+		<meta name="keywords" content="HTML5,CSS3,Template" />
+		<meta name="description" content="" />
+		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />-->
+
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/pink.css" rel="stylesheet" type="text/css" id="color_scheme" />
+	</head>
+
+	<!--
+		AVAILABLE BODY CLASSES:
+		
+		smoothscroll 			= create a browser smooth scroll
+		enable-animation		= enable WOW animations
+
+		bg-grey					= grey background
+		grain-grey				= grey grain background
+		grain-blue				= blue grain background
+		grain-green				= green grain background
+		grain-blue				= blue grain background
+		grain-orange			= orange grain background
+		grain-yellow			= yellow grain background
+		
+		boxed 					= boxed layout
+		pattern1 ... patern11	= pattern background
+		menu-vertical-hide		= hidden, open on click
+		
+		BACKGROUND IMAGE [together with .boxed class]
+		data-background="assets/images/boxed_background/1.jpg"
+	-->
+	<body class="smoothscroll enable-animation">
+
+		<!-- wrapper -->
+		<div id="wrapper">
+
+			<!-- 
+				AVAILABLE HEADER CLASSES
+
+				Default nav height: 96px
+				.header-md 		= 70px nav height
+				.header-sm 		= 60px nav height
+
+				.noborder 		= remove bottom border (only with transparent use)
+				.transparent	= transparent header
+				.translucent	= translucent header
+				.sticky			= sticky header
+				.static			= static header
+				.dark			= dark header
+				.bottom			= header on bottom
+				
+				shadow-before-1 = shadow 1 header top
+				shadow-after-1 	= shadow 1 header bottom
+				shadow-before-2 = shadow 2 header top
+				shadow-after-2 	= shadow 2 header bottom
+				shadow-before-3 = shadow 3 header top
+				shadow-after-3 	= shadow 3 header bottom
+
+				.clearfix		= required for mobile menu, do not remove!
+
+				Example Usage:  class="clearfix sticky header-sm transparent noborder"
+			-->
+			<div id="header" class="sticky transparent header-md clearfix">
+
+				<!-- TOP NAV -->
+				<header id="topNav">
+					<div class="container">
+
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+
+						<!-- Logo -->
+						<a class="logo pull-left scrollTo" href="#top">
+							<img src="assets/images/logoNova.png" alt="" />
+							<img src="assets/images/logoNovaD.png" alt="" />
+						</a>
+
+						<!-- 
+							Top Nav 
+							
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+						-->
+						<div class="navbar-collapse pull-right nav-main-collapse collapse">
+							<nav class="nav-main">
+
+								<!-- 
+									.nav-onepage
+									Required for onepage navigation links
+									
+									Add .external for an external link!
+								-->
+								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+									<li class="active"><!-- HOME -->
+										<a href="#slider">
+											Inicio
+										</a>
+									</li>
+									<li class="active"><!-- HOME -->
+										<a href="#about">
+											Nosotros
+										</a>
+									</li>
+									<li><!-- WORK -->
+										<a href="#work">
+											Trabajo
+										</a>
+									</li>
+									<li><!-- TEAM -->
+										<a href="#team">
+											Equipo
+										</a>
+									</li>
+									<li><!-- TEAM -->
+										<a href="#redes">
+											Redes
+										</a>
+									</li>
+									<li><!-- SERVICES -->
+										<a href="#services">
+											Servicios
+										</a>
+									</li>
+									<li><!-- CONTACT -->
+										<a href="#contact">
+											Contactarnos
+										</a>
+									</li>
+								</ul>
+
+							</nav>
+						</div>
+
+					</div>
+				</header>
+				<!-- /Top Nav -->
+
+			</div>
+
+
+			<!-- SLIDER -->
+			<section id="slider" class="fullheight parallax parallax-4" style="background-image:url('assets/images/fondo.jpg');">
+				<div class="overlay dark-5"><!-- dark overlay [0 to 9 opacity] --></div>
+
+				<div class="display-table" >
+					<div class="display-table-cell vertical-align-middle">
+						<div class="container">
+
+							<div class="slider-featured-text text-center">
+								<img src="assets/images/logo2.png" class="img-responsive">
+								<h2 class="weight-300 text-white wow fadeInUp" data-wow-delay="0.8s">Create just what you need for your Perfect Website</h2>
+								<!--<a class="btn btn-primary btn-lg wow fadeInUp" data-wow-delay="1s" href="#">PURCHASE SMARTY</a>-->
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</section>
+			<!-- /SLIDER -->
+			<!-- ABOUT -->
+			<section id="about">
+				<div class="container">
+
+					<header class="text-center margin-bottom-60">
+						<!--<h2>We Are Smarty</h2>-->
+						<img src="assets/images/logoNovaT.png" class="img-responsive">
+						<p class="lead font-lato">Lorem ipsum dolor sit amet adipiscium elit</p>
+						<hr />
+					</header>
+
+
+					<div class="row">
+
+
+
+						<div class="col-sm-6">
+							<p class="lead">
+								Ponemos a su disposición nuestro staff altamente profesional y experimentado en fotografía, estilismo y procesamiento digital de foto y video.
+								Contamos con un ámplio y confortable estudio en el centro del <strong> Sancti Spíritus</strong>, con gran variedad de vestuario, calzado y accesorios sin ningún costo adicional.
+								Brindamos variadas opciones de paquetes conformados siempre teniendo en cuenta todos los gustos y economía.
+								Le ofrecemos el servicio con la mejor tecnología del momento en fotografía e impresión digital.
+
+							</p >
+
+							<hr />
+
+							<div class="row countTo-sm text-center">
+
+								<div class="col-xs-6 col-sm-4">
+									<i class="fa fa-users size-20"></i> &nbsp; 
+									<span class="countTo" data-speed="3000" style="color:#59BA41">1303</span>
+									<h6>HAPPY CLIENTS</h6>
+								</div>
+
+								<div class="col-xs-6 col-sm-4">
+									<i class="fa fa-briefcase size-20"></i> &nbsp; 
+									<span class="countTo" data-speed="3000" style="color:#774F38">56000</span>
+									<h6>FINISHED PROJECTS</h6>
+								</div>
+
+								<div class="col-xs-6 col-sm-4">
+									<i class="fa fa-twitter size-20"></i> &nbsp; 
+									<span class="countTo" data-speed="3000" style="color:#C02942">4897</span>
+									<h6>TWITTER FOLLOWERS</h6>
+								</div>
+
+							</div>
+
+						</div>
+						<div class="col-sm-6">
+							<img class="img-responsive" src="assets/images/camera/PikPng.com_camara-png_1609575.png" alt="" />
+						</div>
+
+					</div>
+
+
+				</div>
+			</section>
+			<!-- /ABOUT -->
+			<!-- WORK -->
+			<section id="work">
+				<div class="container">
+
+					<header class="text-center margin-bottom-60">
+						<h2>Nuestro Trabajo</h2>
+						<p class="lead font-lato">Lorem ipsum dolor sit amet adipiscium elit</p>
+						<hr />
+					</header>
+
+
+					<!-- PORTFOLIO -->
+					<div id="portfolio" class="portfolio-nogutter">
+
+						<ul class="nav nav-pills mix-filter margin-bottom-60">
+							<li data-filter="all" class="filter active"><a href="#">Todos</a></li>
+							<!--<li data-filter="blanco" class="filter"><a href="#">Blanco y Negro</a></li>-->
+							<li data-filter="exteriro" class="filter"><a href="#">Exterior</a></li>
+							<li data-filter="retrato" class="filter"><a href="#">Retrato</a></li>
+							<li data-filter="familia" class="filter"><a href="#">Familia</a></li>
+							<li data-filter="dream" class="filter"><a href="#">Creativa</a></li>
+						</ul>
+
+
+						<div class="row mix-grid">
+							<div class="col-md-3 col-sm-3 mix retrato"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+												<a class="ico-rounded lightbox" href="assets/images/galeria/DSC_0317.jpg" data-plugin-options='{"type":"image"}'>
+													<span class="fa fa-plus size-20"></span>
+												</a>
+
+												<!-- details -->
+
+
+											</span>
+										</span>
+
+										<img class="img-responsive" src="assets/images/galeria/DSC_0317.jpg" width="600" height="399" alt="">
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Keila</h3>
+										<ul class="list-inline categories nomargin">
+											<li><a href="#">Photography</a></li>
+											<li><a href="#">Design</a></li>
+										</ul>
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="col-md-3 col-sm-3 mix exteriro"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+												<a class="ico-rounded lightbox" href="assets/images/galeria/DSC_0360.jpg" data-plugin-options='{"type":"image"}'>
+													<span class="fa fa-plus size-20"></span>
+												</a>
+
+												<!-- details -->
+
+
+											</span>
+										</span>
+
+										<img class="img-responsive" src="assets/images/galeria/DSC_0360.jpg" width="600" height="399" alt="">
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Keila</h3>
+										<ul class="list-inline categories nomargin">
+											<li><a href="#">Photography</a></li>
+											<li><a href="#">Design</a></li>
+										</ul>
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="col-md-3 col-sm-3 mix familia"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+												<a class="ico-rounded lightbox" href="assets/images/galeria/DSC_0239.jpg" data-plugin-options='{"type":"image"}'>
+													<span class="fa fa-plus size-20"></span>
+												</a>
+
+												<!-- details -->
+
+
+											</span>
+										</span>
+
+										<img class="img-responsive" src="assets/images/galeria/DSC_0239.jpg" width="600" height="399" alt="">
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Keila</h3>
+										<ul class="list-inline categories nomargin">
+											<li><a href="#">Photography</a></li>
+											<li><a href="#">Design</a></li>
+										</ul>
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="col-md-3 col-sm-3 mix retrato"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+												<a class="ico-rounded lightbox" href="assets/images/galeria/ETF_1553.jpg" data-plugin-options='{"type":"image"}'>
+													<span class="fa fa-plus size-20"></span>
+												</a>
+
+												<!-- details -->
+
+
+											</span>
+										</span>
+
+										<img class="img-responsive" src="assets/images/galeria/ETF_1553.jpg" width="600" height="399" alt="">
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Yadimira López</h3>
+										<ul class="list-inline categories nomargin">
+											<li><a href="#">Photography</a></li>
+											<li><a href="#">Design</a></li>
+										</ul>
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="col-md-3 col-sm-3 mix dream"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+												<a class="ico-rounded lightbox" href="assets/images/galeria/ETF_5536.jpg" data-plugin-options='{"type":"image"}'>
+													<span class="fa fa-plus size-20"></span>
+												</a>
+
+												<!-- details -->
+
+
+											</span>
+										</span>
+
+										<img class="img-responsive" src="assets/images/galeria/ETF_5536.jpg" width="600" height="399" alt="">
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Yadimira López</h3>
+										<ul class="list-inline categories nomargin">
+											<li><a href="#">Photography</a></li>
+											<li><a href="#">Design</a></li>
+										</ul>
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="col-md-3 col-sm-3 mix dream"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+												<a class="ico-rounded lightbox" href="assets/images/galeria/ETF_1170.jpg" data-plugin-options='{"type":"image"}'>
+													<span class="fa fa-plus size-20"></span>
+												</a>
+
+												<!-- details -->
+
+
+											</span>
+										</span>
+
+										<img class="img-responsive" src="assets/images/galeria/ETF_1170.jpg" width="600" height="399" alt="">
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Yadimira López</h3>
+										<ul class="list-inline categories nomargin">
+											<li><a href="#">Photography</a></li>
+											<li><a href="#">Design</a></li>
+										</ul>
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="col-md-3 col-sm-3 mix exteriro"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+												<a class="ico-rounded lightbox" href="assets/images/galeria/ETF_6645.jpg" data-plugin-options='{"type":"image"}'>
+													<span class="fa fa-plus size-20"></span>
+												</a>
+
+												<!-- details -->
+
+
+											</span>
+										</span>
+
+										<img class="img-responsive" src="assets/images/galeria/ETF_6645.jpg" width="600" height="399" alt="">
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Yadimira López</h3>
+										<ul class="list-inline categories nomargin">
+											<li><a href="#">Photography</a></li>
+											<li><a href="#">Design</a></li>
+										</ul>
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="col-md-3 col-sm-3 mix dream"><!-- item -->
+
+								<div class="item-box">
+									<figure>
+										<span class="item-hover">
+											<span class="overlay dark-5"></span>
+											<span class="inner">
+
+												<!-- lightbox -->
+												<a class="ico-rounded lightbox" href="assets/images/galeria/IMG_20200808_225352.jpg" data-plugin-options='{"type":"image"}'>
+													<span class="fa fa-plus size-20"></span>
+												</a>
+
+												<!-- details -->
+
+
+											</span>
+										</span>
+
+										<img class="img-responsive" src="assets/images/galeria/IMG_20200808_225352.jpg" width="600" height="399" alt="">
+									</figure>
+
+									<div class="item-box-desc">
+										<h3>Elizabeth Ramos</h3>
+										<ul class="list-inline categories nomargin">
+											<li><a href="#">Photography</a></li>
+											<li><a href="#">Design</a></li>
+										</ul>
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+					<!-- /PORTFOLIO -->
+
+					<!-- CONTACT US -->
+
+					<div class="callout alert alert-transparent noborder ">
+
+						<a href="#" class="btn btn-xlg btn-foursquare  size-20 fullwidth nomargin bopadding ">
+							<span class="font-lato size-30"><i class=" et-camera"></i> Ver Mas</span>
+							<!--<span class="block font-lato">30 days demo for free</span>-->
+						</a>
+
+					</div>
+					<!-- /CONTACT US -->
+
+				</div>
+			</section>
+			<!-- /WORK -->
+			<!-- TEAM -->
+			<section id="team">
+				<div class="container">
+
+					<header class="text-center margin-bottom-60">
+						<h2>Nuestro Equipo</h2>
+						<p class="lead font-lato">Lorem ipsum dolor sit amet adipiscium elit</p>
+						<hr />
+					</header>
+
+					<!--<p class="lead">Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this.</p>-->
+					<!--<p>Lorem ipsum dolor sit amet. Etharums your template rerum facilis dolores nemis omnis fugats vitaes you need this totam rem aperiam, eaque ipsa qu ab illo inventore veritatis et quasi architectos beatae vitae dicta sunt explicabo. Nemo enim sadips ipsums dolores sit.Nemo enims sadips ipsums un inventore veritatis et quasi.</p>-->
+
+					<div class="row">
+					
+						<!-- item -->
+						<div class="col-md-4 col-sm-6">
+							<div class="box-flip box-icon box-icon-center box-icon-round box-icon-large text-center" style="min-height: 322px;">
+								<div class="front">
+									<div class="box1 box-shadow-1" style="min-height: 322px;">
+										<div class="ribbon"><!-- ribbon inside relative box -->
+											<div class="ribbon-inner">Fotografo</div>
+										</div>
+										<div class="box-icon-title">
+											<img class="img-responsive" src="assets/images/yadimira/team2.jpg" alt="" />
+											<h2>Dianelys Pérez</h2>
+										</div>
+									</div>
+								</div>
+
+								<div class="back">
+									<div class="box2" style="min-height: 322px;">
+										<h4>Dianelys Pérez</h4>
+										<hr>
+										<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere.</p>
+										<a href="#" class="social-icon social-facebook">
+											<i class="fa fa-facebook"></i>
+											<i class="fa fa-facebook"></i>
+										</a>
+										<a href="#" class="social-icon social-twitter">
+											<i class="fa fa-twitter"></i>
+											<i class="fa fa-twitter"></i>
+										</a>
+										<a href="#" class="social-icon social-linkedin">
+											<i class="fa fa-linkedin"></i>
+											<i class="fa fa-linkedin"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<!-- /item -->
+						<div class="col-md-4 col-sm-6">
+							<div class="box-flip box-icon box-icon-center box-icon-round box-icon-large text-center" style="min-height: 322px;">
+								<div class="front">
+									<div class="box1 box-shadow-1" style="min-height: 322px;">
+										<div class="ribbon"><!-- ribbon inside relative box -->
+											<div class="ribbon-inner">Estilista</div>
+										</div>
+										<div class="box-icon-title">
+											<img class="img-responsive" src="assets/images/yadimira/team1.jpg" alt="" />
+											<h2>Yadimira López</h2>
+										</div>
+									</div>
+								</div>
+
+								<div class="back">
+									<div class="box2" style="min-height: 322px;">
+										<h4>Yadimira López</h4>
+										<hr>
+										<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere.</p>
+										<a href="#" class="social-icon social-facebook">
+											<i class="fa fa-facebook"></i>
+											<i class="fa fa-facebook"></i>
+										</a>
+										<a href="#" class="social-icon social-twitter">
+											<i class="fa fa-twitter"></i>
+											<i class="fa fa-twitter"></i>
+										</a>
+										<a href="#" class="social-icon social-linkedin">
+											<i class="fa fa-linkedin"></i>
+											<i class="fa fa-linkedin"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<!-- item -->
+						<div class="col-md-4 col-sm-6">
+							<div class="box-flip box-icon box-icon-center box-icon-round box-icon-large text-center" style="min-height: 322px;">
+								<div class="front">
+									<div class="box1 box-shadow-1" style="min-height: 322px;">
+										<div class="ribbon "><!-- ribbon inside relative box -->
+											<div class="ribbon-inner bg-aqua">Editor</div>
+										</div>
+										<div class="box-icon-title">
+											<img class="img-responsive" src="assets/images/yadimira/team3.jpg" alt="" />
+											<h2>Jose Couzo</h2>
+										</div>
+									</div>
+								</div>
+
+								<div class="back ">
+									<div class="box2 bg-aqua" style="min-height: 322px;">
+										<h4>Jose Couzo</h4>
+										<hr>
+										<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere.</p>
+										<a href="#" class="social-icon social-facebook">
+											<i class="fa fa-facebook"></i>
+											<i class="fa fa-facebook"></i>
+										</a>
+										<a href="#" class="social-icon social-twitter">
+											<i class="fa fa-twitter"></i>
+											<i class="fa fa-twitter"></i>
+										</a>
+										<a href="#" class="social-icon social-linkedin">
+											<i class="fa fa-linkedin"></i>
+											<i class="fa fa-linkedin"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<!-- /item -->
+
+
+					</div>
+
+				</div>
+			</section>
+			<!-- /TEAM -->
+			<!-- PARALLAX -->
+			<section class="parallax  parallax-slider" style="background-image: url('assets/images/wall3-min.jpg');" id="redes">
+				<div class="overlay dark-6"><!-- dark overlay [1 to 9 opacity] --></div>
+
+				<div class="container">
+
+					<div class="text-center">
+						<h3 class="nomargin">Nuestras Redes</h3>
+						<p class="font-lato weight-300 lead nomargin-top">We can't solve problems by using the same kind of thinking we used when we created them.</p>
+					</div>
+
+					<ul class="margin-top-80 social-icons list-unstyled list-inline">
+						<li>
+							<a target="_blank" href="#">
+								<i class="fa fa-facebook"></i>
+								<h4>Facebook</h4>
+								<span>Be Our Friend</span>
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="#">
+								<i class="fa fa-twitter"></i>
+								<h4>Twitter</h4>
+								<span>Follow Us</span>
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="#">
+								<i class="fa fa-youtube"></i>
+								<h4>Youtube</h4>
+								<span>Our Videos</span>
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="#">
+								<i class="fa fa-instagram"></i>
+								<h4>Instagram</h4>
+								<span>See Our Images</span>
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="#">
+								<i class="fa fa-linkedin"></i>
+								<h4>Linkedin</h4>
+								<span>Check Our Identity</span>
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="#">
+								<i class="fa fa-pinterest"></i>
+								<h4>Pinterest</h4>
+								<span>Visual Discovery</span>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+
+			</section>
+			<!-- /PARALLAX -->
+			<!-- SERVICES -->
+			<section id="services">
+				<div class="container">
+
+					<header class="text-center margin-bottom-60">
+						<h2>Nuestras Ofertas</h2>
+						<p class="lead font-lato">Lorem ipsum dolor sit amet adipiscium elit</p>
+						<!--<hr />-->
+					</header>
+
+					<!--<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc vehicula lacinia. Proin adipiscing porta tellus, ut feugiat nibh adipiscing sit amet.</p>-->
+					
+					<div class="divider divider-center divider-color"><!-- divider -->
+						<i class="fa fa-chevron-down"></i>
+					</div>
+
+					<!-- FEATURED BOXES 3 -->
+					<div class="row">
+
+						<div class="col-md-3 col-sm-3">
+
+							<div class="price-clean price-clean-popular">
+								<h4>
+									<sup>$</sup>35<em>/month</em>
+								</h4>
+								<h5> DEVELOPER </h5>
+								<hr />
+								<p>For individuals looking for something simple to get started.</p>
+								<hr />
+								<a href="#" class="btn btn-3d btn-primary">Learn More</a>
+							</div>
+
+						</div>
+
+						<div class="col-md-3 col-sm-3">
+
+							<div class="price-clean price-clean-popular">
+								<h4>
+									<sup>$</sup>35<em>/month</em>
+								</h4>
+								<h5> DEVELOPER </h5>
+								<hr />
+								<p>For individuals looking for something simple to get started.</p>
+								<hr />
+								<a href="#" class="btn btn-3d btn-primary">Learn More</a>
+							</div>
+
+						</div>
+
+						<div class="col-md-3 col-sm-3">
+
+							<div class="price-clean price-clean-popular">
+								<div class="ribbon">
+									<div class="ribbon-inner">POPULAR</div>
+								</div>
+
+								<h4>
+									<sup>$</sup>35<em>/month</em>
+								</h4>
+								<h5> DEVELOPER </h5>
+								<hr />
+								<p>For individuals looking for something simple to get started.</p>
+								<hr />
+								<a href="#" class="btn btn-3d btn-primary">Learn More</a>
+							</div>
+
+						</div>
+
+						<div class="col-md-3 col-sm-3">
+
+							<div class="price-clean price-clean-popular">
+								<h4>
+									<sup>$</sup>35<em>/month</em>
+								</h4>
+								<h5> DEVELOPER </h5>
+								<hr />
+								<p>For individuals looking for something simple to get started.</p>
+								<hr />
+								<a href="#" class="btn btn-3d btn-primary">Learn More</a>
+							</div>
+
+						</div>
+
+					</div>
+					<!-- /FEATURED BOXES 3 -->
+
+				</div>
+			</section>
+			<!-- /SERVICES -->
+			<section class="parallax parallax-slider" style="background-image: url('assets/images/25-min.jpg');" id="contact">
+				<div class="overlay dark-6"><!-- dark overlay [1 to 9 opacity] --></div>
+				<div class="container">
+					<div class="row">
+
+						<div class="col-md-3">
+							<!-- Footer Logo -->
+							<img class="footer-logo" src="assets/images/logo-footer2.png" alt="" />
+
+							<!-- Small Description -->
+							<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+
+							<!-- Contact Address -->
+							<address>
+								<ul class="list-unstyled">
+									<li class="footer-sprite address">
+										PO Box 21132<br>
+										Here Weare St, Melbourne<br>
+										Vivas 2355 Australia<br>
+									</li>
+									<li class="footer-sprite phone">
+										Phone: 1-800-565-2390
+									</li>
+									<li class="footer-sprite email">
+										<a href="mailto:support@yourname.com">support@yourname.com</a>
+									</li>
+								</ul>
+							</address>
+							<!-- /Contact Address -->
+
+						</div>
+
+						<div class="col-md-3">
+
+							<!-- Latest Blog Post -->
+							<h4 class="letter-spacing-1">LATEST NEWS</h4>
+							<ul class="footer-posts list-unstyled">
+								<li>
+									<a href="#">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue</a>
+									<small>29 June 2015</small>
+								</li>
+								<li>
+									<a href="#">Nullam id dolor id nibh ultricies</a>
+									<small>29 June 2015</small>
+								</li>
+								<li>
+									<a href="#">Duis mollis, est non commodo luctus</a>
+									<small>29 June 2015</small>
+								</li>
+							</ul>
+							<!-- /Latest Blog Post -->
+
+						</div>
+
+						<div class="col-md-2">
+
+							<!-- Links -->
+							<h4 class="letter-spacing-1">EXPLORE SMARTY</h4>
+							<ul class="footer-links list-unstyled">
+								<li><a href="#">Home</a></li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Our Services</a></li>
+								<li><a href="#">Our Clients</a></li>
+								<li><a href="#">Our Pricing</a></li>
+								<li><a href="#">Smarty Tour</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+							<!-- /Links -->
+
+						</div>
+
+						<div class="col-md-4">
+
+							<!-- Newsletter Form -->
+							<h4 class="letter-spacing-1">KEEP IN TOUCH</h4>
+							<p>Subscribe to Our Newsletter to get Important News &amp; Offers</p>
+
+							<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+									<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
+									<span class="input-group-btn">
+										<button class="btn btn-success" type="submit">Subscribe</button>
+									</span>
+								</div>
+							</form>
+							<!-- /Newsletter Form -->
+
+							<!-- Social Icons -->
+							<div class="margin-top-20">
+								<a href="#" class="social-icon social-icon-border social-facebook pull-left" data-toggle="tooltip" data-placement="top" title="Facebook">
+
+									<i class="icon-facebook"></i>
+									<i class="icon-facebook"></i>
+								</a>
+
+								<a href="#" class="social-icon social-icon-border social-twitter pull-left" data-toggle="tooltip" data-placement="top" title="Twitter">
+									<i class="icon-twitter"></i>
+									<i class="icon-twitter"></i>
+								</a>
+
+								<a href="#" class="social-icon social-icon-border social-gplus pull-left" data-toggle="tooltip" data-placement="top" title="Google plus">
+									<i class="icon-gplus"></i>
+									<i class="icon-gplus"></i>
+								</a>
+
+								<a href="#" class="social-icon social-icon-border social-linkedin pull-left" data-toggle="tooltip" data-placement="top" title="Linkedin">
+									<i class="icon-linkedin"></i>
+									<i class="icon-linkedin"></i>
+								</a>
+
+								<a href="#" class="social-icon social-icon-border social-rss pull-left" data-toggle="tooltip" data-placement="top" title="Rss">
+									<i class="icon-rss"></i>
+									<i class="icon-rss"></i>
+								</a>
+
+							</div>
+							<!-- /Social Icons -->
+
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<!-- /CONTACT -->
+			<!-- FOOTER -->
+			<footer id="footer">
+				<div class="copyright">
+					<div class="container">
+						<!--<ul class="pull-right nomargin list-inline mobile-block">-->
+							<!--<li><a href="#">Terms &amp; Conditions</a></li>-->
+							<!--<li>&bull;</li>-->
+							<!--<li><a href="#">Privacy</a></li>-->
+						<!--</ul>-->
+						&copy; All Rights Reserved, NOVA
+					</div>
+				</div>
+			</footer>
+			<!-- /FOOTER -->
+
+		</div>
+		<!-- /wrapper -->
+
+
+		<!-- SCROLL TO TOP -->
+		<a href="#" id="toTop"></a>
+
+
+		<!-- PRELOADER -->
+		<div id="preloader">
+			<div class="inner">
+				<span class="loader"></span>
+			</div>
+		</div><!-- /PRELOADER -->
+
+
+		<!-- JAVASCRIPT FILES -->
+		<script type="text/javascript">var plugin_path = 'assets/plugins/';</script>
+		<script type="text/javascript" src="assets/plugins/jquery/jquery-2.1.4.min.js"></script>
+
+		<script type="text/javascript" src="assets/js/scripts.js"></script>
+		
+		<!-- STYLESWITCHER - REMOVE -->
+		<!--<script async type="text/javascript" src="assets/plugins/styleswitcher/styleswitcher.js"></script>-->
+
+		<!-- PAGELEVEL SCRIPTS -->
+		<script type="text/javascript" src="assets/js/contact.js"></script>
+
+		<!-- 
+			GMAP.JS 
+			http://hpneo.github.io/gmaps/
+		-->
+		<!--<script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true"></script>-->
+		<!--<script type="text/javascript" src="assets/plugins/gmaps.js"></script>-->
+		<!--<script type="text/javascript">-->
+
+			<!--jQuery(document).ready(function(){-->
+
+				<!--/**-->
+					<!--@BASIC GOOGLE MAP-->
+				<!--**/-->
+				<!--var map2 = new GMaps({-->
+					<!--div: '#map2',-->
+					<!--lat: -12.043333,-->
+					<!--lng: -77.028333,-->
+					<!--scrollwheel: false-->
+				<!--});-->
+
+				<!--var marker = map2.addMarker({-->
+					<!--lat: -12.043333,-->
+					<!--lng: -77.028333,-->
+					<!--title: 'Company, Inc.'-->
+				<!--});-->
+
+			<!--});-->
+
+		<!--</script>-->
+
+	</body>
+</html>
